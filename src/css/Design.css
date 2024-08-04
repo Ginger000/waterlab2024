@@ -1,0 +1,41 @@
+.custom-container {
+  margin: 20px auto; /* Center container and add top margin */
+}
+
+@media (min-width: 768px) {
+  .custom-container {
+      width: 90%; /* Width for tablets and larger screens */
+  }
+}
+
+@media (max-width: 767px) {
+  .custom-container {
+      width: 95%; /* Full width for mobile */
+  }
+}
+
+.design-card {
+  overflow: hidden;
+  transition: transform 0.3s;
+  border: none !important; /* Remove card outline */
+  box-shadow: none !important; /* Remove card shadow */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+.design-card-img {
+  transition: transform 0.3s;
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+.design-card:hover .design-card-img {
+  transform: scale(1.2);
+}
+
+.design-card-title {
+  transition: color 0.3s;
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+.design-card:hover .design-card-title {
+  color: blue;
+}
